@@ -1,0 +1,43 @@
+.title,
+.context {
+  text-align: center;
+}
+.title_green {
+  color: #04ddb2;
+}
+.title {
+  padding: 80px 0px 10px;
+  font-size: 64px;
+}
+.context_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.context {
+  font-size: 24px;
+  width: 550px;
+  line-height: 1.45;
+  margin-bottom: 40px;
+}
+.video_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 24px;
+}
+.videoPic {
+  border-radius: 24px;
+  transition: 0.4s ease;
+  object-fit: cover;
+  cursor: pointer;
+  max-width: 840px;
+  max-height: 473px;
+}
+
+.videoPic:hover {
+  box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25),
+    0 0 20px 0 rgba(0, 0, 0, 0.03);
+  transform: scale3d(1.01, 1.01, 1.01);
+}
