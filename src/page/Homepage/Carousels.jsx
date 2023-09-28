@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import { AutoplayCarousel } from "../../component/Carousel/AutoplayCarousel";
+import { AutoplayCarousel2 } from "../../component/Carousel/AutoplayCarousel_2";
 
 function carousels() {
   return (
@@ -19,29 +20,7 @@ function carousels() {
 
         <div>
           <AutoplayCarousel />
-
-          {/* <video
-            loop
-            muted
-            autoPlay
-            className={styles.carousel_item}
-            src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4"
-          /> */}
-
-          {/* <video
-            loop
-            muted
-            autoPlay
-            className={styles.carousel_item}
-            src="https://www.lobe.ai/assets/examples/Plants.mp4"
-          /> */}
-
-          {/* <video
-            loop
-            muted
-            autoPlay
-            src="https://www.lobe.ai/assets/examples/Mask%20Up.mp4"
-          /> */}
+          <AutoplayCarousel2 />
         </div>
       </div>
     </section>

@@ -4,7 +4,14 @@ import styles from "./page.module.css";
 export function CarouselItem({ imgUrl, imgTitle }) {
   return (
     <span className={styles.slider}>
-      <img src={imgUrl} alt={imgTitle}></img>
+      <video
+        loop
+        muted
+        autoPlay
+        className={styles.carousel_item}
+        src={imgUrl}
+        alt={imgTitle}
+      ></video>
     </span>
   );
 }

@@ -11,7 +11,6 @@ function Hero() {
   ];
 
   const [string, setString] = useState("identify plants");
-  const [fadeIn, setFadeIn] = useState("opacity: 0");
 
   let index = 0;
 
@@ -19,7 +18,6 @@ function Hero() {
     const interval = setInterval(() => {
       index = index + 1 === word.length ? 0 : index + 1;
       setString(word[index]);
-      setFadeIn(" opacity: 1");
     }, 4900);
     return () => clearInterval(interval);
   }, []);
