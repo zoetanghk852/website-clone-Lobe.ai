@@ -5,7 +5,6 @@ import Train from "./Homepage/Train";
 import Export from "./Homepage/Export";
 import Carousels from "./Homepage/Carousels";
 import FinalCall from "./Homepage/FinalCall";
-import { Tour } from "./tourpage/Tour";
 
 function Main() {
   return (
@@ -15,7 +14,6 @@ function Main() {
       <Train />
       <Export />
       <Carousels />
-      {/* <Tour /> */}
       <FinalCall />
     </div>
   );

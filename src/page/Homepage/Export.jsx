@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./page.module.css";
 
 function Export() {
   const [string, setString] = useState("anywhere");
-  const [fadein, setFadein] = useState("opacity:0");
+  const [fadein] = useState("opacity:0");
 
   return (
     <section className={styles.section_dark}>

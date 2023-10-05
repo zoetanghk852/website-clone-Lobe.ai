@@ -74,11 +74,21 @@ function Navigation() {
       </div>
 
       <div className={styles.nav_menu}>
-        <a className={styles.nav_link}>Overview</a>
-        <a className={styles.nav_link}>Examples</a>
-        <a className={styles.nav_link}>Tour</a>
-        <a className={styles.nav_link}>Blog</a>
-        <a className={styles.nav_link}>Help</a>
+        <a href="/" className={styles.nav_link}>
+          Overview
+        </a>
+        <a href="/" className={styles.nav_link}>
+          Examples
+        </a>
+        <a href="/" className={styles.nav_link}>
+          Tour
+        </a>
+        <a href="/" className={styles.nav_link}>
+          Blog
+        </a>
+        <a href="/" className={styles.nav_link}>
+          Help
+        </a>
       </div>
       <div className={styles.nav_btn}>
         <button className={styles.hero_btn}>Download</button>

@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./page.module.css";
 
 function Hero() {
-  let word = [
+  const intervalRef = useRef(null);
+  const indexRef = useRef(0);
+  const wordRef = useRef([
     "identify plants",
     "see gestures",
     "count reps",
     "sense colors",
     "check safety",
-  ];
-
+  ]);
   const [string, setString] = useState("identify plants");
 
-  let index = 0;
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      index = index + 1 === word.length ? 0 : index + 1;
-      setString(word[index]);
+    intervalRef.current = setInterval(() => {
+      indexRef.current =
+        indexRef.current + 1 === wordRef.current.length
+          ? 0
+          : indexRef.current + 1;
+      setString(wordRef.current[indexRef.current]);
     }, 4900);
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalRef.current);
   }, []);
-
   return (
     <main>
       <div className={styles.hero_video_mobile}>
