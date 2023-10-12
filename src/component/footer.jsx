@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../page/Homepage/page.module.css";
+import styles from "../style/footer.module.css";
 
 function Footer() {
   return (
-    <footer>
+    <div className={styles.footer}>
       <div className={styles.footer_desktop}>
         <div>
           <figure className={styles.footer_logo}>
@@ -72,9 +72,9 @@ function Footer() {
               </g>
             </svg>
           </figure>
-          <p className={styles.copywrite}>A product by Microsoft.</p>
-          <p className={styles.copywrite}>All rights reserved.</p>
-          <p className={styles.copywrite}>© Microsoft 2021</p>
+          <p className={styles.copyright}>A product by Microsoft.</p>
+          <p className={styles.copyright}>All rights reserved.</p>
+          <p className={styles.copyright}>© Microsoft 2021</p>
         </div>
         <div>
           <h6 className={styles.footer_heading}>About</h6>
@@ -193,6 +193,7 @@ function Footer() {
           </a>
         </div>
       </div>
+
       <div className={styles.footer_mobile}>
         <div className={styles.footer_right}>
           <div className={styles.footer_column}>
@@ -241,7 +242,7 @@ function Footer() {
             </a>
           </div>
           <div className={styles.footer_column}>
-            <div className={styles.media_mobile}>
+            <div className={`${styles.media_mobile} ${styles.socialLinks}`}>
               <a className={styles.media} href="/">
                 <svg
                   width="27px"
@@ -411,15 +412,15 @@ function Footer() {
                 </g>
               </svg>
             </figure>
-            <div className={styles.copywrite}>
-              <p className={styles.copywrite}>A product by Microsoft.</p>
-              <p className={styles.copywrite}>All rights reserved.</p>
-              <p className={styles.copywrite}>© Microsoft 2021</p>
+            <div className={styles.copyright}>
+              <p className={styles.copyright}>A product by Microsoft.</p>
+              <p className={styles.copyright}>All rights reserved.</p>
+              <p className={styles.copyright}>© Microsoft 2021</p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
 

@@ -20,7 +20,7 @@ function Hero() {
           ? 0
           : indexRef.current + 1;
       setString(wordRef.current[indexRef.current]);
-    }, 4900);
+    }, 7000);
     return () => clearInterval(intervalRef.current);
   }, []);
   return (
@@ -28,7 +28,7 @@ function Hero() {
       <div className={styles.hero_video_mobile}>
         <video loop muted autoPlay className={styles.hero_video}>
           <source
-            src={require("../../img/Home_Mobile.mp4")}
+            src={require("../../videos/Home_Mobile.mp4")}
             type={"video/mp4"}
           />
         </video>
@@ -81,7 +81,7 @@ function Hero() {
       <div className={styles.hero_right}>
         <video loop muted autoPlay className={styles.hero_video}>
           <source
-            src={require("../../img/Home_Desktop.mp4")}
+            src={require("../../videos/Home_Desktop.mp4")}
             type={"video/mp4"}
           />
         </video>

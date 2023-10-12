@@ -17,7 +17,7 @@ function Train() {
       </div>
       <img
         className={styles.Label}
-        src={require("../../img/Label_one.jpg")}
+        src={require("../../images/Label_one.jpg")}
         alt="labelOne"
       />
 
@@ -36,7 +36,7 @@ function Train() {
       </div>
       <img
         className={styles.Label}
-        src={require("../../img/Label_two.jpg")}
+        src={require("../../images/Label_two.jpg")}
         alt="labelTwo"
       />
 
@@ -55,7 +55,7 @@ function Train() {
       </div>
       <img
         className={styles.Label}
-        src={require("../../img/Label_three.jpg")}
+        src={require("../../images/Label_three.jpg")}
         alt="labelThree"
       />
 

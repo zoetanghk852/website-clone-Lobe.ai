@@ -1,4 +1,5 @@
 import React from "react";
+
 import Hero from "./Homepage/Hero";
 import Templates from "./Homepage/Templates";
 import Train from "./Homepage/Train";
@@ -6,7 +7,7 @@ import Export from "./Homepage/Export";
 import Carousels from "./Homepage/Carousels";
 import FinalCall from "./Homepage/FinalCall";
 
-function Main() {
+function Home() {
   return (
     <div>
       <Hero />
@@ -19,4 +20,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

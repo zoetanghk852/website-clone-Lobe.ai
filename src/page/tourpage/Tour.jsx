@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 
-export function Tour() {
+export default function Tour() {
   return (
     <div>
       <h1 className={styles.title}>
@@ -17,7 +17,7 @@ export function Tour() {
       <div className={styles.video_container}>
         <img
           className={styles.videoPic}
-          src={require("../../img/Video.jpg")}
+          src={require("../../images/Video.jpg")}
           loading="lazy"
           alt="Learn more about Lobe by watching our tour video."
         ></img>

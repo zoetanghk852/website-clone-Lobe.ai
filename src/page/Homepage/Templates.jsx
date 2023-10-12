@@ -21,7 +21,7 @@ function Templates() {
 
         <img
           className={styles.screenshot}
-          src={require("../../img/screenshot.jpg")}
+          src={require("../../images/screenshot.jpg")}
           alt="screenshot"
         />
 
@@ -30,7 +30,7 @@ function Templates() {
             <div className={styles.feature_card}>
               <video loop muted autoPlay className={styles.featureicon}>
                 <source
-                  src={require("../../img/features_Easy.mp4")}
+                  src={require("../../videos/features_Easy.mp4")}
                   type={"video/mp4"}
                 />
               </video>
@@ -43,7 +43,7 @@ function Templates() {
             <div className={styles.feature_card}>
               <video loop muted autoPlay className={styles.featureicon}>
                 <source
-                  src={require("../../img/features_Private.mp4")}
+                  src={require("../../videos/features_Private.mp4")}
                   type={"video/mp4"}
                 />
               </video>
@@ -56,7 +56,7 @@ function Templates() {
             <div className={styles.feature_card}>
               <video loop muted autoPlay className={styles.featureicon}>
                 <source
-                  src={require("../../img/features_Anywhere.mp4")}
+                  src={require("../../videos/features_Anywhere.mp4")}
                   type={"video/mp4"}
                 />
               </video>

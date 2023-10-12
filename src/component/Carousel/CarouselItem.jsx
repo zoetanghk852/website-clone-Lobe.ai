@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./page.module.css";
+import styles from "../../style/carousel.module.css";
 
 export function CarouselItem({ imgUrl, imgTitle }) {
   return (
