@@ -5,6 +5,7 @@ import Footer from "./component/footer";
 import Home from "./page/Home";
 import Tour from "./page/tourpage/Tour";
 function App() {
+  document.title = "Lobe";
   return (
     <div className="App">
       <Navigation />
